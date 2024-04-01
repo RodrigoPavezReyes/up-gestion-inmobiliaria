@@ -1,0 +1,107 @@
+.mainIndex{
+    h2{
+        margin-left: 54rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-family: "Roboto";
+        font-size: 1rem;
+        font-weight: 400;
+        
+    };
+
+    .propIndex{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        a{
+            
+            img{
+                width: 30rem;
+            };
+        };
+
+    };
+
+    section{
+        width: 100%;
+        height: 35rem;
+        background-image: url(../assets/img/fondoSeccionIndex.png);
+        background-size: cover;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+        .misionIndex{
+            width: 35rem;
+            height: 20rem;
+            background-color: white;
+            border: 1px solid black;
+            margin-left: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            
+            img{
+                width: 4rem; 
+            };
+            p{
+                font-family: "Roboto";
+                font-size: 1rem;
+            };
+
+            a{
+                button{
+                    width: 8rem;
+                    height: 2.5rem;
+                    background-color: black;
+                    color: white;
+                    font-family: "Roboto";
+                    font-size: 1rem;
+                    font-weight: lighter;
+                }
+            }
+
+            
+        };
+
+
+        .indicadores{
+
+            @extend .misionIndex;
+            margin-right: 5rem;
+            
+            .botonIndicadores{
+                    width: 9rem;
+                    height: 2.5rem;
+                    background-color: black;
+                    color: white;
+                    font-family: "Roboto";
+                    font-size: 1rem;
+                    font-weight: lighter;
+                    text-align: center;
+                    line-height: 2.5rem;                    
+            };
+
+            div{
+                p{
+                    font-family: "Roboto";
+                    font-weight: bolder;
+                    margin: 1rem;
+                }
+            }
+        };
+
+
+    };
+
+
+
+
+
+
+
+
+}

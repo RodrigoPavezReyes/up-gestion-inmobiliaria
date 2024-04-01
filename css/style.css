@@ -1,5 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "fontLogo";
+  src: url(../assets/fonts/agencyfb_reg.ttf);
+}
 .headerIndex {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/img/imgFondoIndex.png);
+  background-size: cover;
+}
+.headerIndex div img {
+  width: 10rem;
+  margin-left: 27rem;
+  margin-top: 1.5rem;
+}
+.headerIndex div h1 {
+  font-family: "fontLogo";
+  font-weight: lighter;
+  color: white;
+  margin-left: 25rem;
+  text-shadow: 1px -1px 9px rgb(0, 0, 0);
+}
+.headerIndex nav {
+  width: 40rem;
+  height: 5rem;
+  margin-top: 10rem;
+  margin-left: 16rem;
+}
+.headerIndex nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.headerIndex nav ul li a {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+  text-shadow: 1px 7px 9px rgb(0, 0, 0);
+}
+
+footer {
+  width: 100%;
+  height: 14rem;
+  background-color: #7c7c7c;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footerCorpo p {
+  font-family: "Roboto";
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  color: #EDE5D4;
+  margin-top: 3rem;
+}
+footer .footerCorpo div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+footer .footerCorpo div a {
+  text-decoration: none;
+  margin-top: 0.5rem;
+  color: white;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: lighter;
+  letter-spacing: 1.3px;
+}
+footer .footerProp p {
+  font-family: "Roboto";
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  color: #EDE5D4;
+  margin-top: 3rem;
+}
+footer .footerProp div {
+  margin-top: 1.3rem;
+}
+footer .footerProp div p {
+  margin-top: 0.5rem;
+  color: white;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: lighter;
+  letter-spacing: 1.3px;
+}
+footer .footerContacto p {
+  font-family: "Roboto";
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+  color: #EDE5D4;
+  margin-top: 3rem;
+}
+footer .footerContacto div {
+  margin-top: 1.3rem;
+}
+footer .footerContacto div p {
+  margin-top: 0.5rem;
+  color: white;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: lighter;
+  letter-spacing: 1.3px;
+}
+footer .footerContacto div div {
+  display: flex;
+}
+footer .footerContacto div div img {
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+
+.mainIndex h2 {
+  margin-left: 54rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+}
+.mainIndex .propIndex {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.mainIndex .propIndex a img {
+  width: 30rem;
+}
+.mainIndex section {
+  width: 100%;
+  height: 35rem;
+  background-image: url(../assets/img/fondoSeccionIndex.png);
+  background-size: cover;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainIndex section .misionIndex, .mainIndex section .indicadores {
+  width: 35rem;
+  height: 20rem;
+  background-color: white;
+  border: 1px solid black;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainIndex section .misionIndex img, .mainIndex section .indicadores img {
+  width: 4rem;
+}
+.mainIndex section .misionIndex p, .mainIndex section .indicadores p {
+  font-family: "Roboto";
+  font-size: 1rem;
+}
+.mainIndex section .misionIndex a button, .mainIndex section .indicadores a button {
+  width: 8rem;
+  height: 2.5rem;
   background-color: black;
+  color: white;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.mainIndex section .indicadores {
+  margin-right: 5rem;
+}
+.mainIndex section .indicadores .botonIndicadores {
+  width: 9rem;
+  height: 2.5rem;
+  background-color: black;
+  color: white;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 2.5rem;
+}
+.mainIndex section .indicadores div p {
+  font-family: "Roboto";
+  font-weight: bolder;
+  margin: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

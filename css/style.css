@@ -16,12 +16,12 @@
   background-image: url(../assets/img/imgFondoIndex.png);
   background-size: cover;
 }
-.headerIndex div img {
+.headerIndex .logo img {
   width: 10rem;
   margin-left: 27rem;
   margin-top: 1.5rem;
 }
-.headerIndex div h1 {
+.headerIndex .logo h1 {
   font-family: "fontLogo";
   font-weight: lighter;
   color: white;
@@ -46,6 +46,151 @@
   font-size: 1.3rem;
   color: white;
   text-shadow: 1px 7px 9px rgb(0, 0, 0);
+}
+
+.headerProp, .headerContacto, .headerNosotros {
+  display: flex;
+  width: auto;
+  height: 24rem;
+  background-image: url(../assets/img/fondoNavPropiedades.png);
+  background-size: cover;
+}
+.headerProp .logo img, .headerContacto .logo img, .headerNosotros .logo img {
+  width: 10rem;
+  margin-left: 27rem;
+  margin-top: 1.5rem;
+}
+.headerProp .logo h1, .headerContacto .logo h1, .headerNosotros .logo h1 {
+  font-family: "fontLogo";
+  font-weight: lighter;
+  color: white;
+  margin-left: 25rem;
+  text-shadow: 1px -1px 9px rgb(0, 0, 0);
+}
+.headerProp nav, .headerContacto nav, .headerNosotros nav {
+  width: 40rem;
+  height: 5rem;
+  margin-top: 10rem;
+  margin-left: 16rem;
+}
+.headerProp nav ul, .headerContacto nav ul, .headerNosotros nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.headerProp nav ul li a, .headerContacto nav ul li a, .headerNosotros nav ul li a {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+  text-shadow: 1px 7px 9px rgb(0, 0, 0);
+}
+
+.headerNosotros {
+  background-image: url(../assets/img/fondoNavNosotros.png);
+}
+
+.headerContacto {
+  background-image: url(../assets/img/fondoNavContacto.png);
+}
+
+.mainIndex h2 {
+  margin-left: 54rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+}
+.mainIndex .propIndex {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.mainIndex .propIndex a img {
+  width: 30rem;
+}
+.mainIndex section {
+  width: 100%;
+  height: 35rem;
+  background-image: url(../assets/img/fondoSeccionIndex.png);
+  background-size: cover;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainIndex section .misionIndex, .mainIndex section .indicadores {
+  width: 35rem;
+  height: 20rem;
+  background-color: white;
+  border: 1px solid black;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainIndex section .misionIndex img, .mainIndex section .indicadores img {
+  width: 4rem;
+}
+.mainIndex section .misionIndex p, .mainIndex section .indicadores p {
+  font-family: "Roboto";
+  font-size: 1rem;
+}
+.mainIndex section .misionIndex a button, .mainIndex section .indicadores a button {
+  width: 8rem;
+  height: 2.5rem;
+  background-color: black;
+  color: white;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.mainIndex section .indicadores {
+  margin-right: 5rem;
+}
+.mainIndex section .indicadores .botonIndicadores {
+  width: 9rem;
+  height: 2.5rem;
+  background-color: black;
+  color: white;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 2.5rem;
+}
+.mainIndex section .indicadores div p {
+  font-family: "Roboto";
+  font-weight: bolder;
+  margin: 1rem;
+}
+
+.mainNosotros {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainNosotros p {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  width: 70rem;
+}
+.mainNosotros img {
+  width: 5rem;
+  margin-top: 10rem;
+}
+
+.mainContacto {
+  width: 100%;
+  height: 20rem;
 }
 
 footer {
@@ -120,77 +265,11 @@ footer .footerContacto div div img {
   margin-right: 1rem;
 }
 
-.mainIndex h2 {
-  margin-left: 54rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-family: "Roboto";
-  font-size: 1rem;
-  font-weight: 400;
-}
-.mainIndex .propIndex {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-.mainIndex .propIndex a img {
-  width: 30rem;
-}
-.mainIndex section {
-  width: 100%;
-  height: 35rem;
-  background-image: url(../assets/img/fondoSeccionIndex.png);
-  background-size: cover;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.mainIndex section .misionIndex, .mainIndex section .indicadores {
-  width: 35rem;
-  height: 20rem;
+.lineaVertical {
+  width: 2px;
+  height: 150px;
   background-color: white;
-  border: 1px solid black;
-  margin-left: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.mainIndex section .misionIndex img, .mainIndex section .indicadores img {
-  width: 4rem;
-}
-.mainIndex section .misionIndex p, .mainIndex section .indicadores p {
-  font-family: "Roboto";
-  font-size: 1rem;
-}
-.mainIndex section .misionIndex a button, .mainIndex section .indicadores a button {
-  width: 8rem;
-  height: 2.5rem;
-  background-color: black;
-  color: white;
-  font-family: "Roboto";
-  font-size: 1rem;
-  font-weight: lighter;
-}
-.mainIndex section .indicadores {
-  margin-right: 5rem;
-}
-.mainIndex section .indicadores .botonIndicadores {
-  width: 9rem;
-  height: 2.5rem;
-  background-color: black;
-  color: white;
-  font-family: "Roboto";
-  font-size: 1rem;
-  font-weight: lighter;
-  text-align: center;
-  line-height: 2.5rem;
-}
-.mainIndex section .indicadores div p {
-  font-family: "Roboto";
-  font-weight: bolder;
-  margin: 1rem;
+  margin-top: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

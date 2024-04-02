@@ -1,8 +1,8 @@
-.headerIndex {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    background-image: url(../assets/img/imgFondoIndex.png);
+.headerProp{
+    display: flex;    
+    width: auto;
+    height: 24rem;
+    background-image: url(../assets/img/fondoNavPropiedades.png);
     background-size: cover;
 
     .logo {
@@ -46,5 +46,3 @@
     };
 
 };
-
-

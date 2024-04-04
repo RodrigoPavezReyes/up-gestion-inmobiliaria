@@ -1,0 +1,13 @@
+@media (max-width:1024px) {       
+    
+
+    .mainProp{
+        height: 80vh;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .propIndex{
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+};

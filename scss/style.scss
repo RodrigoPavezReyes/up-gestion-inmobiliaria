@@ -1,10 +1,10 @@
-@import "./utilities/variables";
-@import "./utilities/mixins";
 @import "./base/reset";
 @import "./base/typo";
 
 @import "./components/cards";
 @import "./components/form";
+
+
 
 
 @import "./layout/header-index";
@@ -21,6 +21,9 @@
 
 @import "./layout/footer";
 
+@import "./layout/media/media2150";
+@import "./layout/media/media1600";
+@import "./layout/media/media1300";
 @import "./layout/media/media1024";
 @import "./layout/media/media768";
 @import "./layout/media/media480";

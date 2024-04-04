@@ -1,0 +1,29 @@
+@media (max-width:1600px) {        
+    .headerIndex {        
+        column-gap: 10rem;        
+        .logo{
+            img{
+                margin-left: 15rem;
+            }
+            h1{
+                margin-left: 13rem;
+            }
+        }
+    }
+
+    .headerProp{
+        column-gap: 10rem;        
+        .logo{
+            img{
+                margin-left: 15rem;
+            }
+            h1{
+                margin-left:13rem;
+            }
+        }
+    }
+
+    .mainProp{
+        height: 50vh;
+    }
+};

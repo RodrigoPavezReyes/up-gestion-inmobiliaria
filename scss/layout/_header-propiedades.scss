@@ -4,12 +4,13 @@
     height: 24rem;
     background-image: url(../assets/img/fondoNavPropiedades.png);
     background-size: cover;
+    column-gap: 20rem;
 
     .logo {
 
         img {
             width: 10rem;
-            margin-left: 27rem;
+            margin-left: 40rem;
             margin-top: 1.5rem;
         };
 
@@ -17,7 +18,7 @@
             font-family: "fontLogo";
             font-weight: lighter;
             color: white;
-            margin-left: 25rem;
+            margin-left: 38rem;
             text-shadow: 1px -1px 9px rgba(0, 0, 0, 1);
         };
     };
@@ -26,7 +27,7 @@
         width: 40rem;
         height: 5rem;
         margin-top: 10rem;
-        margin-left:16rem;
+        
         ul{
             display: flex;            
             justify-content: space-between;

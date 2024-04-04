@@ -39,6 +39,9 @@
                     font-size: 1.3rem;
                     color: white;
                     text-shadow: 1px 7px 9px rgba(0,0,0,1);
+                    &:hover {
+                        color: #000000;
+                    };
                 };
             };
         };

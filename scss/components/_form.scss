@@ -1,0 +1,55 @@
+form {
+    width: 40rem;
+    height: 30rem;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+    .formCampo {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-family: 'Roboto';
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #dddddd;
+        font-family: 'Roboto';
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .botonEnviar {
+        padding: 10px 20px;
+        background-color: #0021A2;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 15rem;
+
+        &:hover {
+            background-color: #1d3fe6;
+    }
+
+    
+    
+};
+}

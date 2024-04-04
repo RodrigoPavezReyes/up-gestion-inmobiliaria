@@ -9,6 +9,88 @@
   font-family: "fontLogo";
   src: url(../assets/fonts/agencyfb_reg.ttf);
 }
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px black;
+  overflow: hidden;
+  width: 20rem;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card .cardContent {
+  padding: 1.25rem;
+  background-color: #EDE5D4;
+  text-align: center;
+}
+.card .cardContent h3 {
+  text-align: center;
+}
+.card .cardContent p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.card .cardContent a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #0021A2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+form {
+  width: 40rem;
+  height: 30rem;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form .formCampo {
+  margin-bottom: 20px;
+}
+form label {
+  font-family: "Roboto";
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+form input[type=text],
+form input[type=email],
+form input[type=tel],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #dddddd;
+  font-family: "Roboto";
+}
+form textarea {
+  resize: vertical;
+}
+form .botonEnviar {
+  padding: 10px 20px;
+  background-color: #0021A2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15rem;
+}
+form .botonEnviar:hover {
+  background-color: #1d3fe6;
+}
+
 .headerIndex {
   display: flex;
   width: 100%;
@@ -39,6 +121,10 @@
   justify-content: space-between;
   list-style: none;
 }
+.headerIndex nav ul li:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+}
 .headerIndex nav ul li a {
   text-decoration: none;
   font-family: "Roboto";
@@ -46,6 +132,9 @@
   font-size: 1.3rem;
   color: white;
   text-shadow: 1px 7px 9px rgb(0, 0, 0);
+}
+.headerIndex nav ul li a:hover {
+  color: #000000;
 }
 
 .headerProp, .headerContacto, .headerNosotros {
@@ -85,6 +174,9 @@
   font-size: 1.3rem;
   color: white;
   text-shadow: 1px 7px 9px rgb(0, 0, 0);
+}
+.headerProp nav ul li a:hover, .headerContacto nav ul li a:hover, .headerNosotros nav ul li a:hover {
+  color: #000000;
 }
 
 .headerNosotros {
@@ -148,6 +240,9 @@
   font-size: 1rem;
   font-weight: lighter;
 }
+.mainIndex section .misionIndex a button:active, .mainIndex section .indicadores a button:active {
+  background-color: #7c7c7c;
+}
 .mainIndex section .indicadores {
   margin-right: 5rem;
 }
@@ -166,6 +261,16 @@
   font-family: "Roboto";
   font-weight: bolder;
   margin: 1rem;
+}
+
+.mainProp {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
 }
 
 .mainNosotros {
@@ -189,8 +294,16 @@
 }
 
 .mainContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 20rem;
+  height: 70vh;
+  row-gap: 3rem;
+}
+.mainContacto p {
+  font-family: "Roboto";
 }
 
 footer {

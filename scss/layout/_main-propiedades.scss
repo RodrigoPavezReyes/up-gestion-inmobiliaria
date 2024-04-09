@@ -1,7 +1,8 @@
-.mainProp{
-    display: grid;
-    width: 100%;
-    height: 70vh;
+.contenedorProp{
+    display: grid;    
+    height: auto;
+    row-gap: 3rem;
+    margin: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
     justify-items: center;

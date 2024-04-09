@@ -1,8 +1,7 @@
 @media (max-width:1024px) {       
     
 
-    .mainProp{
-        height: 80vh;
+    .contenedorProp{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3,1fr);
     }

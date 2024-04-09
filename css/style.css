@@ -22,7 +22,7 @@
 }
 .card img {
   width: 100%;
-  height: auto;
+  height: 15rem;
 }
 .card .cardContent {
   padding: 1.25rem;
@@ -38,7 +38,7 @@
   text-align: center;
   font-family: "Roboto";
 }
-.card .cardContent a {
+.card .cardContent button {
   display: inline-block;
   padding: 5px 10px;
   background-color: #0021A2;
@@ -272,10 +272,11 @@ form .botonEnviar:hover {
   margin: 1rem;
 }
 
-.mainProp {
+.contenedorProp {
   display: grid;
-  width: 100%;
-  height: 70vh;
+  height: auto;
+  row-gap: 3rem;
+  margin: 1.5rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
@@ -308,11 +309,12 @@ form .botonEnviar:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 70vh;
+  height: auto;
   row-gap: 3rem;
 }
 .mainContacto p {
   font-family: "Roboto";
+  margin-top: 3rem;
 }
 
 footer {
@@ -433,8 +435,9 @@ footer .footerContacto div div img {
   .headerProp .logo h1, .headerNosotros .logo h1, .headerContacto .logo h1 {
     margin-left: 13rem;
   }
-  .mainProp {
-    height: 50vh;
+  .propIndex {
+    column-gap: 1rem;
+    row-gap: 2rem;
   }
 }
 @media (max-width: 1300px) {
@@ -458,8 +461,7 @@ footer .footerContacto div div img {
   }
 }
 @media (max-width: 1024px) {
-  .mainProp {
-    height: 80vh;
+  .contenedorProp {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
